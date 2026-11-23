@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090d12;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #89939e;
+    margin-bottom: 35px;
+}
+
+.password-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.digit-box {
+    width: 65px;
+    height: 75px;
+
+    border: 2px solid #303b47;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    color: white;
+
+    transition: all 0.25s ease;
+}
+
+#message {
+    margin-top: 30px;
+    color: #89939e;
+    font-size: 14px;
+}
+
+
+/* TACNA CIFRA */
+
+.digit-box.correct {
+    border-color: #00e676;
+    color: #00e676;
+
+    box-shadow:
+            0 0 10px rgba(0, 230, 118, 0.5),
+            0 0 25px rgba(0, 230, 118, 0.2);
+}
+
+/* POGRESNA CIFRA */
+
+.digit-box.incorrect {
+    border-color: #ff3333;
+    color: #ff3333;
+
+    box-shadow:
+            0 0 10px rgba(255, 51, 51, 0.5),
+            0 0 25px rgba(255, 51, 51, 0.2);
+}
+
+/* PORUKA O USPEHU */
+
+#message.success {
+    color: #00e676;
+    text-shadow: 0 0 10px rgba(0, 230, 118, 0.5);
+}
